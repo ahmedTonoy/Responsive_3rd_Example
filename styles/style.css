@@ -6,3 +6,178 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+/* Common styles */
+
+/* Container for fixed width webpage sections in larger devices */
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Flex */
+.display-flex{
+    display: flex;
+}
+
+/* Font weights */
+.medium{
+    font-weight: 500;
+}
+.semi-bold{
+    font-weight: 600;
+}
+.bold{
+    font-weight: 700;
+}
+
+/* Font colors */
+.dark-1{
+    color: rgba(19, 19, 19, 1);
+}
+.dark-2{
+    color: rgba(66, 66, 66, 1);
+}
+.dark-3{
+    color: rgba(114, 114, 114, 1);
+}
+.orange{
+    color: rgba(255, 144, 14, 1);
+}
+
+/* Font sizes */
+.size-18{
+    font-size: 1.125rem;
+}
+.size-20{
+    font-size: 1.25rem;
+}
+.size-45{
+    font-size: 2.813rem;
+}
+.size-64{
+    font-size: 4rem;
+}
+.size-65{
+    font-size: 4.063rem;
+}
+
+/* Background colors */
+.bg-orange{
+    background-color: rgba(255, 144, 14, 1);
+}
+.bg-orange-lite{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.bg-footer{
+    background-color: rgba(255, 244, 231, 1);
+}
+
+/* Button styles */
+.btn-primary{
+    padding: 20px 24px;
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Center aligned text/content */
+.txt-center{
+    text-align: center;
+}
+
+
+/* Header styles */
+
+/* navbar styles */
+.navbar{
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-links{
+    padding-left: 0;
+    gap: 30px;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+}
+
+/* banner styles */
+.banner{
+    margin: 70px 0 85px;
+}
+.banner-content{
+    max-width: 862px;
+    margin: 0 auto 50px;
+}
+.banner-description{
+    margin: 25px 0 32px;
+}
+.banner-img{
+    border-radius: 8px;
+    padding-bottom: 45px;
+}
+.banner-img img{
+    width: 100%;
+}
+
+/* section-1 styles */
+.our-features{
+    gap: 70px;
+    align-items: center;
+    margin-bottom: 130px;
+}
+.team-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.team-images img{
+    border-radius: 8px;
+}
+.feature-title{
+    max-width: 468px;
+}
+.feature-description{
+    max-width: 537px;
+    margin: 24px 0 32px;
+}
+
+
+/* Responsive media queries */
+
+/* Small device */
+@media screen and (max-width: 576px) {
+    .navbar{
+        flex-direction: column;
+    }
+
+    /* section-1 styles */
+    .our-features{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .team-images{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .feature-info{
+        margin-left: 20px;
+    }
+    
+}
+
+/* Medium device */
+@media screen and (min-width: 576px) and (max-width: 992px){
+    /* section-1 styles */
+    .our-features{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .feature-info{
+        margin: 0 auto;
+    }
+}
+
