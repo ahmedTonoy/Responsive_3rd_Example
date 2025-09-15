@@ -86,6 +86,11 @@
     text-align: center;
 }
 
+/* Section bottom margin */
+.section-bottom{
+    margin-bottom: 130px;
+}
+
 
 /* Header styles */
 
@@ -128,7 +133,6 @@
 .our-features{
     gap: 70px;
     align-items: center;
-    margin-bottom: 130px;
 }
 .team-images{
     display: grid;
@@ -146,11 +150,54 @@
     margin: 24px 0 32px;
 }
 
+/* Section-3 styles */
+.some-facts-title{
+    margin-bottom: 24px;
+}
+.some-facts-description{
+    max-width: 540px;
+    margin-bottom: 100px;
+}
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 40px;
+}
+.fact{
+    border: 1px solid rgba(255, 144, 14, 1);
+    border-radius: 8px;
+    width: 240px;
+    height: 240px;
+    justify-content: center;
+    align-items: center;
+}
+.fact-number, .fact-name{
+    margin: 10px auto;
+}
+
+/* Section-4 styles */
+.sponsor-title{
+    margin-bottom: 24px;
+}
+.sponsor-info{
+    max-width: 542px;
+    margin: 24px auto 50px;
+}
+.sponsor-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+}
+.sponsor-container img {
+  filter: grayscale(100%);
+}
+
 
 /* Responsive media queries */
 
 /* Small device */
 @media screen and (max-width: 576px) {
+    /* Navbar styles */
     .navbar{
         flex-direction: column;
     }
@@ -166,6 +213,27 @@
     .feature-info{
         margin-left: 20px;
     }
+
+    /* Section-3 styles */
+    .some-facts{
+        padding: 0 15px;
+    }
+    .some-facts-description{
+        margin-bottom: 50px;
+    }
+    .facts-container{
+        grid-template-columns: repeat(1, 0.7fr);
+        justify-content: center;
+        margin-left: 0px;
+        gap: 30px;
+    }
+
+    /* Section-4 styles */
+    .sponsor-container{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        gap: 40px;
+    }
     
 }
 
@@ -178,6 +246,33 @@
     }
     .feature-info{
         margin: 0 auto;
+    }
+
+    /* Section-3 styles */
+    .some-facts{
+        padding: 0 25px;
+    }
+    .some-facts-description{
+        margin-bottom: 50px;
+    }
+    .facts-container{
+        grid-template-columns: repeat(2, 0.5fr);
+        justify-content: center;
+        gap: 30px;
+        margin-left: 0px;
+    }
+    .fact-1, .fact-3{
+        justify-self: self-end;
+    }
+    .fact-2, .fact-4{
+        justify-self: self-start;
+    }
+
+    /* Section-4 styles */
+    .sponsor-container{
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        gap: 40px;
     }
 }
 
